@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8"/>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+ *{
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ img{
+   width:50px;
+ }
+
+ .container{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://media.istockphoto.com/vectors/white-brick-wall-texture-seamless-vector-illustrationbrick-seamless-vector-id1164704287?k=6&m=1164704287&s=170667a&w=0&h=e3k5PWb0i2zThOk9n7sXXO7Nv7QsoXE4CaiNrm1Mf_k=);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+ .container .form_container{
+   padding: 40px 50px 40px 50px;
+   background-image:linear-gradient(45deg, #77c2fc, #bbd7ed);
+   border-radius: 10px;
+   box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+ }
+ .container .form_container .heading h2{
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 35px;
+     margin-bottom: 20px;
+     color: #fff;
+ }
+ .container .form_container .input_box input{
+     background: transparent;
+     width: 100%;
+     border-bottom: 2px solid #fff;
+     border: none;
+     color:#fff;
+     margin-bottom: 20px;
+     font-size: 13px;
+     padding: 4px 0px 4px 25px;
+     height: 33px;
+     transition: 0.8s all;
+ }
+ .container .form_container .input_box .icon{
+     position: absolute;
+     height: 33px;
+     color: #fff;
+     line-height: 33px;
+ }
+ .container .form_container .radiobox{
+     width: 100%;
+     border: none;
+     color:#555;
+     font-size: 12px;
+     height: 33px;
+ }
+ .container .form_container .date{
+     width: 100%;
+     border: none;
+     color:#555;
+     font-size: 12px;
+     height: 33px;
+ }
+ .container .form_container .submit button{
+     border: none;
+     outline: none;
+     width: 100%;
+     background: #fff;
+     color: #555555;
+     height: 40px;
+     font-size: 15px;
+     text-transform: uppercase;
+     font-weight: bold;
+     cursor: pointer;
+ }
+ .container .form_container .icon{
+     color: #fff;
+ }
+ .iconi{
+    padding: 5px;
+    color: #6ba9c2;
+    min-width: 5px;
+    width:28px;
+    height:21px;
+    background-color: #d5e9f5;
+    border-radius: 10px;
+    }
+ </style>
+</head>
+<body>
+<div class="container">
+    <div class= "form_container">
+        <div class="heading">
+            <h2>Formulario</h2>
+        </div>
+
+        <form>
+            <div class="imagem">
+                <span class="icon"><i class="fa fa-camera iconi"></i></span>
+                <input type="file" name="" /></br>
+                <button type="enviar">enviar</button>
+            </div>
+            <div class="input_box">
+                <span class="icon"><i class="fa fa-user"></i></span>
+                <input type="text" name="" placeholder="Nome" required="required">
+            </div>
+            <div class="input_box">
+                <span class="icon"><i class="fa fa-at"></i></span>
+                <input type="text" name="" placeholder="Email" required="required">
+            </div>
+            <div class="input_box">
+                <span class="icon"><i class="fa fa-unlock-alt"></i></span>
+                <input type="password" name="senha" placeholder="Sua senha">
+            </div>
+            <div class="input_box">
+                 <span class="icon"><i class="fa fa-unlock-alt"></i></span> 
+                 <input type="password" name="senha" placeholder="Repita sua senha">
+            </div>
+            <div class="radiobox">
+                <input type="radio"  name="genre" value="famale">
+                <label for="famale">Feminino</label>
+                <input type="radio"  name="genre" value="male">
+                <label for="male">Masculino</label>
+           </div> 
+           <div class="date"> 
+            Date of birth: <input type="date" name="birth">
+           </div>
+            <div class="submit">
+                <button type="submit">enviar</button>
+            </div>  
+        </form>
+
+    </div>
+</div>
+</body>
+</html>
